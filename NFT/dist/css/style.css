@@ -10,5 +10,26 @@ body {
   background: #0d192b;
   font-family: 'Outfit', sans-serif;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.card {
+  width: 300px;
+  background: #14253d;
+}
+
+.card__image {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,15 @@
+$primary-blue: hsl(215, 51%, 70%);
+$primary-cyan: hsl(178, 100%, 50%);
+$white: hsl(0, 0%, 100%);
+
+$vdb-main-bg: hsl(217, 54%, 11%);
+$vdb-card-bg: hsl(216, 50%, 16%);
+$vdb-line: hsl(215, 32%, 27%);
+
+$font-light: 300;
+$font-thick: 400;
+$font-heavy: 600;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +17,23 @@
 }
 
 body {
-  background: hsl(217, 54%, 11%);
+  background: $vdb-main-bg;
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
   font-family: 'Outfit', sans-serif;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  width: 300px;
+  background: $vdb-card-bg;
+}
+.card__image {
+  background-image: url(../images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
 }
